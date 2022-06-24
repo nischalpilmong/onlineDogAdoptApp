@@ -195,6 +195,7 @@ header{
 
 .content_section{
     display: flex;
+    gap: 50px;
 }
 
 .content_section a{

@@ -88,6 +88,7 @@ header{
     top: 30px;
     right: 30px;
     display: none;
+    cursor: pointer;
 }
 
 .hamburger_btn .bars{

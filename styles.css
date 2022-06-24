@@ -1,0 +1,385 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+header{
+    background: url('./images/dog-banner-3.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    padding: 20px 35px;
+    justify-content: space-between;
+}
+
+.navbar .logo{
+    color: crimson;
+    font-size: 32px;
+    font-weight: 500;
+}
+
+.navbar .logo span{
+    color: aqua;
+}
+
+#nav #menu{
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+#nav #menu li a{
+    color: #ccc;
+    font-weight: 300;
+    font-size: 16px;
+}
+
+.donate_btn{
+    background: rgb(199, 146, 136);
+    color: #fff;
+    padding: 20px 32px;
+}
+
+
+.text_box{
+   position: absolute;
+   top: 200px;
+   left: 32px;
+}
+
+.text_box h1{
+    color: #fff;
+    font-size: 54px;
+    font-weight: 500;
+    max-width: 50%;
+}
+
+.text_box p{
+    color: #ccc;
+    font-size: 16px;
+    font-weight: 300;
+    max-width: 44%;
+    margin-top: 20px;
+}
+
+.get_involve_btn a{
+    color: #fff;
+    background-color: rgb(199, 146, 136);
+    padding: 20px 32px;
+    margin-top: 25px;
+    display: inline-block;
+}
+
+.hamburger_btn{
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    display: none;
+}
+
+.hamburger_btn .bars{
+    width: 25px;
+    height: 2px;
+    background: #fff;
+    display: block;
+    margin: 7px 0;
+    transition: all 0.3s ease;
+}
+
+/* second text box */
+#second_text_box{
+   min-height: 40vh;
+}
+
+.text_box_two{
+    padding-top: 100px;
+    padding-bottom: 100px;
+    
+}
+
+.text_box_two h2{
+    max-width: 45%;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 36px;
+    font-weight: 500;
+    margin-bottom: 32px;
+}
+
+.text_box_two p{
+    max-width: 45%;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+
+/* dog intro section */
+#dog_intro{
+    min-height: 100vh;
+    background: rgb(199, 146, 136);
+}
+
+#dog_intro h2{
+    text-align: center;
+    color: #fff;
+    font-size: 32px;
+    font-weight: 500;
+    letter-spacing: normal;
+    padding-top: 80px;
+    padding-bottom: 70px;
+}
+
+.dog_individual_items{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 100px;
+    row-gap: 100px;
+    padding: 0 30px;
+}
+
+.dog_individual_items img{
+    width: 100%;
+    max-height: 50%;
+}
+
+.dog_individual_items h3{
+    color: #fff;
+    font-size: 30px;
+    font-weight: 500;
+    margin-top: 5px;
+}
+
+.dog_individual_items p{
+  color: #ccc;
+  font-size: 16px;
+  font-weight: 300;
+  text-align: left;
+  margin-top: 10px;
+}
+
+.inquire_btn{
+    margin-top: 70px;
+    padding-bottom: 100px;
+    text-align: center;
+}
+
+.inquire_btn a{
+    color: rgb(199, 146, 136);
+    background-color: #fff;
+    padding: 20px 32px;
+    display: inline-block;
+}
+
+/* Contact Section */
+.contact_infos{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 32px 36px;
+}
+
+.content_section{
+    display: flex;
+}
+
+.content_section a{
+    display: block;
+}
+
+.social{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 20px;
+}
+.social h3{
+    color: crimson;
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.social h3 span{
+    color: aqua;
+}
+
+.social_icons li{
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.social_icons li a i:hover{
+    cursor: pointer;
+    color: rgb(199, 146, 136);
+}
+
+.content_section div{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.social_icons li a i{
+    font-size: 18px;
+    transition: all 0.4s ease;
+}
+
+.content_section a{
+    color: rgb(199, 146, 136);
+    text-decoration: underline;
+    font-size: 18px;
+    font-weight: 300;
+}
+@media (max-width: 1280px){
+  .text_box{
+      top: 150px;
+  }
+}
+
+@media (max-width: 1024px){
+    .text_box{
+        top: 170px;
+    }
+}
+
+@media (max-width: 768px){
+    .hamburger_btn{
+        display: block;
+        z-index: 6;
+    }
+
+    .logo{
+        position: relative;
+        z-index: 7;
+    }
+    .hamburger_btn.active .bars{
+        background-color: #000;
+    }
+
+    #nav #menu{
+        display: none;
+    }
+    
+    #nav.show #menu li a{
+        color: #000;
+        font-size: 30px;
+    }
+
+    #nav.show #menu{
+        text-align: center;
+       display: flex;
+       flex-direction: column;
+       justify-content: flex-end;
+       position: absolute;
+      top: 0;
+      left: 0;
+      background: #fff;
+      width: 100%;
+      z-index: 5;
+      height: 100vh;
+    }
+
+    .donate_btn{
+        margin-top: 80px;
+        margin-bottom: 40px;
+    }
+    
+    .hamburger_btn.active .bars:nth-child(1){
+        transform: translateY(4.5px) rotate(45deg);
+    }
+    
+    .hamburger_btn.active .bars:nth-child(2){
+        transform: translateY(-4.5px) rotate(-45deg);
+    }
+    
+    .text_box{
+        top: 250px;
+    }
+    .text_box h1{
+        max-width: 90%;
+        font-size: 32px;
+    }
+     .text_box p{
+         max-width: 90%;
+         font-size: 16px;
+     }
+     .text_box_two h2{
+         max-width: 100%;
+         margin: 20px 50px;
+         font-weight: 400;
+         font-size: 32px;
+     }
+
+     .text_box_two p{
+        max-width: 100%;
+        margin: 0 50px;
+    }
+    /* dog intro section */
+     .dog_individual_items{
+         grid-template-columns: repeat(2, 1fr);
+     }
+    /* Contact Section */
+     .contact_infos{
+         flex-direction: column;
+         align-items: flex-start;
+     }
+
+     .content_section{
+         flex-direction: column;
+         margin-top: 30px;
+     }
+  
+    
+}
+
+@media (max-width: 576px){
+   .dog_individual_items{
+       grid-template-columns: repeat(1, 1fr);
+   }
+
+   .dog_individual_items img{
+       max-height: 80%;
+   }
+}
+
+
+@media (max-width: 480px){
+    .text_box h1{
+        max-width: 100%;
+        font-size: 32px;
+    }
+     .text_box p{
+         max-width: 100%;
+         font-size: 16px;
+     }
+
+     .text_box_two h2{
+         margin: 20px 20px;
+     }
+
+     .text_box_two p{
+         margin: 0 20px;
+     }
+}
+
+
+
+
+
+
+
+
